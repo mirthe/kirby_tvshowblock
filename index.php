@@ -29,7 +29,8 @@
                 
                 $mijnoutput = '<div class="well" style="overflow: auto;">';
                 $mijnoutput .= '<img src="https://www.themoviedb.org/t/p/w200/'.$movieinfo['poster_path'].'" alt="" class="floatleft" style="margin-right: 1rem;">';
-                // $mijnoutput .= '<a href="https://www.imdb.com/title/'.$movieinfo['imdb_id'].'" class="floatright" title="Bekijken op IMDb">IMDb</a>';
+                // show first season poster, if available. might add this as an option..
+                // $mijnoutput .= '<img src="https://www.themoviedb.org/t/p/w200/'.$movieinfo['seasons'][0]['poster_path'].'" alt="" class="floatleft" style="margin-right: 1rem;">';
                 $mijnoutput .= '<p><a href="https://www.themoviedb.org/tv/'.$movieinfo['id'].'">'.$movieinfo['name']."</a><br>
                 ". $movieinfo['first_air_date'].", ".$movieinfo['status'].", ".$movieinfo['number_of_seasons']." seasons</p>";
                 $mijnoutput .= '<p><em>'.$movieinfo['tagline']."</em></p>";
