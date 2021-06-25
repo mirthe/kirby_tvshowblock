@@ -24,7 +24,7 @@ Placed for example with
 
     (tvshowblock: tmdb: 185)
 
-<img src="https://github.com/mirthe/kirby_tvshowblock/blob/9769099779996c7b40c8beda97eebd5d1ebee1e4/example.png" alt="Example of usage">
+<img src="https://github.com/mirthe/kirby_tvshowblock/blob/18889e96393b95a7a14ebd7b4ffccf24e5f6b2c3/example.png" alt="Example of usage">
 
 ## Todo
 
