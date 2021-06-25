@@ -39,7 +39,7 @@
                 $mijnoutput .= "<ul class=\"cast\">";
                 foreach ($credits['cast'] as $genre) {
                     $mijnoutput .= '<li>'. $genre['name'] . "</li>";
-                    if (++$i == 5) break;
+                    if (++$i == 7) break;
                 }
                 $mijnoutput .= "</ul>";
 
