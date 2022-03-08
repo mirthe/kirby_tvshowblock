@@ -27,14 +27,15 @@
                 curl_close($ch);
                 $credits = json_decode($rawdata_credits,true);
                 
-                $mijnoutput = '<div class="well" style="overflow: auto;">';
-                $mijnoutput .= '<img src="https://www.themoviedb.org/t/p/w200/'.$movieinfo['poster_path'].'" alt="" class="floatleft" style="margin-right: 1rem;">';
+                $mijnoutput = '<div class="well">';
+                $mijnoutput .= '<div class="well-img"><img src="https://www.themoviedb.org/t/p/w200/'.$movieinfo['poster_path'].'" alt=""></div>';
                 // show first season poster, if available. might add this as an option..
-                // $mijnoutput .= '<img src="https://www.themoviedb.org/t/p/w200/'.$movieinfo['seasons'][0]['poster_path'].'" alt="" class="floatleft" style="margin-right: 1rem;">';
+                // $mijnoutput .= '<div class="well-img"><img src="https://www.themoviedb.org/t/p/w200/'.$movieinfo['seasons'][0]['poster_path'].'" alt=""></div>';
+                $mijnoutput .= '<div class="well-body">';
                 $mijnoutput .= '<p><a href="https://www.themoviedb.org/tv/'.$movieinfo['id'].'">'.$movieinfo['name']."</a><br>
                 ". $movieinfo['first_air_date'].", ".$movieinfo['status'].", ".$movieinfo['number_of_seasons']." seasons</p>";
                 $mijnoutput .= '<p><em>'.$movieinfo['tagline']."</em></p>";
-                $mijnoutput .= '<p>'.$movieinfo['overview']."</p>";
+                $mijnoutput .= '<p>'.mb_strimwidth($movieinfo['overview'],0,300, '&#8230;')."</p>";
 
                 $i = 0;
                 $mijnoutput .= "<ul class=\"cast\">";
@@ -50,7 +51,7 @@
                 }
                 $mijnoutput .= "</ul>";
 
-                $mijnoutput .= '</div>';
+                $mijnoutput .= '</div></div>';
                
                 return $mijnoutput;
             }
