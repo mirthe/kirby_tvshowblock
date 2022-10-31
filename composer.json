@@ -1,5 +1,6 @@
 {
     "name": "mirthe/tvshowblock",
+    "version": "1.0",
     "description": "Shows information for a tv show from the TheMovieDB API",
     "homepage": "https://github.com/mirthe/kirby_tvshowblock",
     "keywords": ["kirby-plugin", "TheMovieDB", "television", "tv"],
