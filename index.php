@@ -47,7 +47,7 @@
                 $poster = isset($movieinfo['poster_path']) ? 'https://www.themoviedb.org/t/p/w200/'.$movieinfo['poster_path'] : '';
                 $mijnoutput = '<div class="well">';
                 if ($poster !== '') {
-                    $mijnoutput .= '<div class="well-img"><img src="'.$poster.'" alt=""></div>';
+                    $mijnoutput .= '<div class="well-img"><a href="https://www.themoviedb.org/tv/'.$movieinfo['id'].'"><img src="'.$poster.'" alt=""></a></div>';
                 }
                 $mijnoutput .= '<div class="well-body">';
                 $mijnoutput .= '<p><a href="https://www.themoviedb.org/tv/'.$movieinfo['id'].'">'.htmlspecialchars($movieinfo['name'] ?? '', ENT_QUOTES).'</a><br>';
