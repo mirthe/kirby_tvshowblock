@@ -5,6 +5,7 @@ require_once __DIR__ . '/src/render.php';
 
 Kirby::plugin('mirthe/tvshowblock', [
     'options' => [
+        'apiKey' => option('themoviedb.apiKey'),
         'cache' => true
     ],
     'tags' => [

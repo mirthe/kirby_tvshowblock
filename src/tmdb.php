@@ -49,7 +49,7 @@ if (!function_exists('mirthe_tvshowblock_fetch')) {
             ];
         }
 
-        $apiKey = option('themoviedb.apiKey');
+        $apiKey = option('mirthe.tvshowblock.apiKey');
         $baseUrl = 'https://api.themoviedb.org/3/tv/' . $tmdbid;
         $showResponse = mirthe_tvshowblock_request($baseUrl . '?api_key=' . $apiKey);
         $creditsResponse = mirthe_tvshowblock_request($baseUrl . '/credits?api_key=' . $apiKey);
