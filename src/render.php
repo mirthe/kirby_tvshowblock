@@ -28,6 +28,7 @@ if (!function_exists('mirthe_tvshowblock_render')) {
             $output .= '<div class="well-img"><a href="https://www.themoviedb.org/tv/' . $showInfo['id'] . '"><img src="' . $poster . '" alt=""></a></div>';
         }
         $output .= '<div class="well-body">';
+        $output .= '<i class="blockico fa-solid fa-tv"></i>';
         $output .= '<p><a href="https://www.themoviedb.org/tv/' . $showInfo['id'] . '">' . htmlspecialchars($showInfo['name'] ?? '', ENT_QUOTES) . '</a><br>';
         $output .= htmlspecialchars($showInfo['first_air_date'] ?? '', ENT_QUOTES);
         $output .= ', ' . htmlspecialchars($showInfo['status'] ?? '', ENT_QUOTES);
